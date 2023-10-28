@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>ATTIC - report</title>
+    {% load bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}
+  </head>
+  <body>
+    <div class="container mt-2 text-center">
+      <img class="img-fluid" src="https://attictours.asia/images/Attic-Logo.jpg" />
+    </div>
+    <div class="container mt-3">
+      {% include 'stats.html' %}
+
+      {% block report %}
+
+      {% endblock %}
+
+      {% comment %}display message after submitting the report{% endcomment %}
+      {% if messages %}
+        <script>
+          alert('Thank you for reporting')
+        </script>
+      {% endif %}
+    </div>
+  </body>
+</html>
