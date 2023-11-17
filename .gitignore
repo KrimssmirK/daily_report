@@ -1,12 +1,13 @@
 # macOS files
 .DS_Store
 
-# libraries
+# ignore all lib in different paths
 lib
 
-# caches
+# ignore all __pycache__
 __pycache__
 
+# ignore all bin
 bin
 
 # ignore only one specific file
