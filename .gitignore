@@ -6,3 +6,7 @@ lib/python3.11/site-packages/**/
 
 daily_report/daily_report/__pycache__/
 daily_report/reports/__pycache__/
+
+
+# ignore only one specific file
+/kenji.txt
