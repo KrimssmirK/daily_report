@@ -2,11 +2,12 @@
 .DS_Store
 
 # libraries
-lib/python3.11/site-packages/**/
+lib
 
-daily_report/daily_report/__pycache__/
-daily_report/reports/__pycache__/
+# caches
+__pycache__
 
+bin
 
 # ignore only one specific file
 /kenji.txt
